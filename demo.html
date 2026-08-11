@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Demonstração — WhatsApp Widget</title>
+    <link rel="stylesheet" href="whatsapp-widget.css">
+    <style>
+        body { min-height: 100vh; margin: 0; display: grid; place-items: center; color: #183047; background: #f4f7fa; font: 16px/1.5 system-ui, sans-serif; }
+        main { max-width: 650px; padding: 30px; text-align: center; }
+        h1 { margin-bottom: 8px; }
+        p { color: #647487; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Demonstração do widget</h1>
+        <p>Aguarde a mensagem automática ou clique no botão do WhatsApp.</p>
+    </main>
+
+    <script src="whatsapp-widget.js"></script>
+    <script>
+        WhatsAppWidget.init({
+            name: 'Atendimento',
+            role: 'Desenvolvedor',
+            image: 'https://placehold.co/120x120/ffffff/1264b0?text=K',
+            message: 'Olá! Deixe sua pergunta, que respondo na sequência.',
+            phone: '+55 (11) 99999-9999',
+            whatsappMessage: 'Olá! Vim pelo site e gostaria de mais informações.',
+            buttonText: 'Iniciar conversa',
+            color: 'rgba(0, 200, 0, 1)',
+            delay: 1500,
+            typingDelay: 900,
+            typingSpeed: 32,
+            showOncePerSession: false
+        });
+    </script>
+</body>
+</html>
