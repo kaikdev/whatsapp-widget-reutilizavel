@@ -2,6 +2,8 @@
 
 Widget reutilizável em JavaScript puro, sem dependências. Ele mostra um botão flutuante, abre uma mensagem automática com indicador e efeito de digitação e, ao receber um clique, exibe uma pequena conversa antes de encaminhar o visitante ao WhatsApp.
 
+Demo: https://kaikdev.github.io/whatsapp-widget-reutilizavel/demo.html
+
 ## Instalação
 
 Copie `whatsapp-widget.css` e `whatsapp-widget.js` para o projeto e inclua-os antes do fechamento de `</body>`:
